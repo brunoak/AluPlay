@@ -21,7 +21,9 @@ function constroiCard(titulo, descricao, url, imagem){
 
 async function listaVi(){
     const listaAPI = await conectaApi.listaVideos();
+    console.log(listaAPI)
     listaAPI.forEach(elemento => lista.appendChild(
         constroiCard(elemento.titulo, elemento.descricao, elemento.url, elemento.imagem)));
+        
 }
 listaVi()
