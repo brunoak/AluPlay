@@ -14,41 +14,25 @@
 </head>
 
 <body>
-
     <header>
-
         <nav class="cabecalho">
             <a class="logo" href="./index.html"></a>
 
-            <div class="cabecalho__pesquisar">
-
-                <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input">
-                <button class="pesquisar__botao">
-
+            <div class="cabecalho__pesquisar" >
+                <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input" data-pesquisa>
+                <button class="pesquisar__botao" data-botao>
             </div>
 
             <div class="cabecalho__icones">
                 <a href="./pages/enviar-video.html" class="cabecalho__videos"></a>
             </div>
         </nav>
-
     </header>
 
     <ul class="videos__container" alt="videos alura" data-lista>
-        <!--
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/pA-EgOaF23I"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/logo.png" alt="logo canal alura">
-                <h3>Qual é o melhor hardware para programação com Mario Souto</h3>
-                <p>236 mil visualizações</p>
-            </div>
-        </li>
-        -->
     </ul>
+
     <script src="js/mostraVideos.js" type="module"></script>
+    <script src="js/buscarVideo.js" type="module"></script>
 </body>
 </html>
